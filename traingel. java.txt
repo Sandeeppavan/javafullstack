@@ -1,0 +1,42 @@
+class Triangle{
+double base;
+double height;
+
+Triangle(double b ,double h){
+this.base=b;
+this.height=h;
+}
+
+void getArea(){
+double area=0.5*base*height;
+System.out.println(area);
+}
+}
+
+
+class Circle{
+double radius;
+
+Circle(double rad){
+this.radius=rad;
+}
+
+void getArea(){
+System.out.println("Area= "+3.14*radius*radius);
+}
+
+void getPerimeter(){
+System.out.println("Perimeter= "+2*3.14*radius);
+} 
+
+}
+
+class Shape{
+public static void main(String[] args){
+Circle s1=new Circle(4);
+s1.getArea();
+s1.getPerimeter();
+Triangle t1=new Triangle(3,7);
+t1.getArea();
+}
+}

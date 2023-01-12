@@ -1,0 +1,16 @@
+class Rectangle{
+double length;
+double width;
+
+
+Rectangle(double length,double width){
+this.length=length;
+this.width=width;
+}
+
+public static void main(string[] args){
+System.out.println("Within main");
+Rectangle r1=new Rectangle();
+
+}
+}
